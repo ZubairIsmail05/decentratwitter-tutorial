@@ -77,6 +77,7 @@ const Home = ({ contract }) => {
         await (await contract.tipPostOwner(post.id, { value: ethers.utils.parseEther("0.1") })).wait()
         loadPosts()
     }
+
     if (loading) return (
         <div className='text-center'>
             <main style={{ padding: "1rem 0" }}>
@@ -84,6 +85,7 @@ const Home = ({ contract }) => {
             </main>
         </div>
     )
+
     return (
         <div className="container-fluid mt-5">
             {hasProfile ?

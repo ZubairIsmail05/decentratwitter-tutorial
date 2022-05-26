@@ -70,6 +70,7 @@ const App = ({ contract }) => {
             loadMyNFTs()
         }
     })
+
     if (loading) return (
         <div className='text-center'>
             <main style={{ padding: "1rem 0" }}>
@@ -77,6 +78,8 @@ const App = ({ contract }) => {
             </main>
         </div>
     )
+
+
     return (
         <div className="mt-4 text-center">
             {profile ? (<div className="mb-3"><h3 className="mb-3">{profile.username}</h3>
